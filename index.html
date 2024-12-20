@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <title>Navbar Example</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7fafc; /* Equivalent to Tailwind's bg-gray-100 */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            width: 100%;
+            background-color: #ffffff; /* Equivalent to Tailwind's bg-white */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Equivalent to Tailwind's shadow-md */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar-content {
+            max-width: 1280px; /* Equivalent to Tailwind's max-w-7xl */
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-left,
+        .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-left {
+            flex: 1;
+        }
+
+        .navbar-right {
+            display: flex;
+            gap: 1.5rem; /* Equivalent to Tailwind's space-x-6 */
+        }
+
+        /* Link Styles */
+        .navbar-link {
+            font-size: 1rem;
+            color: #4a5568; /* Equivalent to Tailwind's text-gray-600 */
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .navbar-link:hover {
+            color: #3182ce; /* Equivalent to Tailwind's hover:text-blue-600 */
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1; /* Allow the content section to grow and fill the space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background-image: url(https://img.freepik.com/free-vector/white-background-with-hexagonal-line-pattern-design_1017-28442.jpg?t=st=1734673764~exp=1734677364~hmac=1a9c537bb2673fdb2dd1c093f8495f842133e504908709cbba18d694a61d8cd6&w=1060);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .main-content-container {
+            max-width: 1280px; /* Equivalent to Tailwind's max-w-7xl */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 150px 40px 150px;
+        }
+
+        .heading {
+            
+            font-size: 40px; /* Equivalent to Tailwind's text-4xl */
+            font-weight: 700px;
+            color: #2d3748; /* Equivalent to Tailwind's text-gray-800 */
+            margin: 0;
+            height: 60px;
+            width: 800px;
+            font-family: "Archivo Black", serif;
+  font-weight: 400px;
+  font-style: normal;
+  margin-bottom: 30px;
+        }
+
+        .description {
+            font-size: 20px; /* Equivalent to Tailwind's text-lg */
+            color: #4a5568; /* Equivalent to Tailwind's text-gray-600 */
+            margin-top: 1rem;
+            height: 30px;
+            width: 600px;
+        }
+        .d3{
+         height: 70px;
+         display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid black; */
+            margin: 10px 40px 10px;
+
+
+        }
+        .getst{
+            border-radius: 20px;
+            background-color: black;
+            color: white ;
+            font-size: larger;
+            font-weight: bold;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+        }
+        .sear{
+            border-radius: 20px;
+            background-color: #ffffff;
+            color: #ffffff;
+            font-size: larger;
+            font-weight: bold;
+            height: 50px;
+            width: 240px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-content">
+            <!-- Left side Navbar -->
+            <div class="navbar-left">
+                <a href="#" class="navbar-link">tailancss</a>
+            </div>
+
+            <!-- Right side Navbar -->
+            <div class="navbar-right">
+                <a href="#" class="navbar-link">Component</a>
+
+                <a href="#" class="navbar-link">Component</a>
+                <a href="#" class="navbar-link">Blog</a>
+                <a href="#" class="navbar-link">Showcase</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <main class="main-content">       <div class="main-content-container">
+            <h1 class="heading">Rapidly build modern websites without ever leaving your HTML.</h1>
+            <br><br><p class="description">A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.</p>
+        </div>
+        <div class="d3">
+            <p class="getst">Get started</p>
+            <input type="search" class="sear" placeholder="search">
+        </div>
+    </main>
+</body>
+
+</html>
